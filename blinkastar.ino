@@ -19,9 +19,9 @@ void loop() {
 
   // if the button is not pressed turn on the green LED and off the red LEDs
   if (switchstate == LOW) {
-    digitalWrite(3, HIGH); // turn the green LED on pin 3 on
-    digitalWrite(4, HIGH);  // turn the red LED on pin 4 off
-    digitalWrite(5, LOW);  // turn the red LED on pin 5 off
+    digitalWrite(3, HIGH); // turn the yelllow LED on pin 3 on
+    digitalWrite(4, HIGH);  // turn the yellow LED on pin 4 on
+    digitalWrite(5, LOW);  
     digitalWrite(6, LOW);
   }
   // this else is part of the above if() statement.
@@ -30,11 +30,11 @@ void loop() {
   else if(switchstate == HIGH) {
     digitalWrite(3, LOW);  // turn the green LED on pin 3 off
     digitalWrite(4, LOW);  // turn the red LED on pin 4 off
-    digitalWrite(5, HIGH); // turn the red LED on pin 5 on
+    digitalWrite(5, HIGH);
     digitalWrite(6, HIGH);
     // wait for a quarter second before changing the light
-    digitalWrite(5, HIGH); // turn the red LED on pin 4 on
-    digitalWrite(6, HIGH);  // turn the red LED on pin 5 off
+    digitalWrite(5, HIGH); // turn the blue LED on pin 4 on
+    digitalWrite(6, HIGH);  // turn the blue LED on pin 5 on
     // wait for a quarter second before changing the light
     delay(250);
   }
